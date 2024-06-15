@@ -1,0 +1,54 @@
+@use "../base/variables" as var;
+
+.header {
+    background-color: var.$propery-grey-10;
+    height: 78px;
+    display: flex;
+    align-items: center;
+
+    .container {
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 500;
+            .menu{
+                display: none;
+            }
+
+            nav {
+                ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+
+                    a {
+                        display: flex;
+                        color: white;
+                        transition-duration: 1.5s;
+
+                        &:hover {
+                            color: rgba(223, 217, 217, 0.91);
+                            transform: scale(1.15);
+                        }
+
+                        &:active{
+                            transform: scale(0.9);
+                        }
+
+                    }
+                }
+            }
+
+            .btn-header {
+                border: 1px solid "var.$propery-grey--15";
+                background: var.$propery-grey-08;
+                color: white;
+                border-radius: 8px;
+                width: 110px;
+                height: 50px;
+            }
+        }
+    }
+}

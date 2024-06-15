@@ -1,0 +1,31 @@
+.btn{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition:transform .2s ease-in-out;
+    color: white;
+    padding: 14px 20px;
+    font-size: 14px;
+    font-weight: 500;
+
+    &:active{
+        transform: scale(0.9);
+    }
+    &:hover{
+        transition: all .5s ease-in-out;
+    }
+}
+
+.btn-outline{
+    &:hover{
+        background-color: rgb(226, 185, 255);
+    }
+}
+
+.btn-solid{
+    color: #fff;
+    &:hover{
+        background-color: indigo;
+    }
+}

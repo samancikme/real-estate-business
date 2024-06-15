@@ -1,0 +1,123 @@
+@use "../base/variables" as var;
+
+footer{
+    background-color: #141414;
+    padding: 80px;
+    .container{
+        .footer-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            gap: 80px;
+            margin-bottom: 80px;
+
+            &--left{
+                width:20%;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                .logo{
+                    width: 115px;
+                    height: 35px;   
+                }
+
+                .input{
+                    width: 310px;
+                    height: 55px;
+                    padding: 14px 50px 14px 46px;
+                    border: 1px solid #262626;
+                    border-radius: 8px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: var.$propery-grey-08;
+                    color: var.$propery-grey-60;
+                    font-size: 14px;
+                    font-weight: 500;
+                    gap: 5px;
+                    input{
+                        border: 1px solid #141414;
+                        background-color: #141414;
+                        color: white;
+                        width: 310px;
+                        height: 35px;
+                    }
+                    img{
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            &--right{
+                width: 80%;
+                text-align: start;
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                gap: 90px;
+
+                nav{
+                    h1{
+                        color:  var.$propery-grey-60;
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin-bottom: 24px;
+                    }
+                    a{
+                        margin-bottom: 16px;
+                    }
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px;
+                        li{
+                            a{
+                                color: white;
+                                font-size: 16px;
+                                font-weight: 500;
+
+                                &:hover{
+                                    color:var.$propery-grey-60 
+                                    ;
+                                    transition: all .5s ease-in-out;
+
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-bottom{   
+    background-color: var.$propery-grey-10;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left{
+            width:30%;
+            display: flex;
+            justify-content: start;
+    
+            h1{
+                font-size: 14px;
+                font-weight: 500;
+                color: white;
+            }
+        }
+        .right{
+            width: 50%;
+            display: flex;
+            justify-content: end;
+            gap: 8px;
+
+        }
+    }
+}

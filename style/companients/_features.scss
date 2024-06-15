@@ -1,0 +1,168 @@
+@use "../base/variables" as var;
+
+
+
+.feature {
+    background-color: #141414;
+    .container {
+        .logo1{
+            margin: 20px 0;
+        }
+        .feature-content {
+            display: flex;
+            flex-direction: column;
+
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+                margin-bottom: 60px;
+                background-color: var.$propery-grey-08;
+
+                h1 {
+                    font-size: 38px;
+                    font-weight: 600;
+                    color: white;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: var.$propery-grey-60;
+                }
+
+                &--text {
+                    width: 70%;
+                }
+
+                .btn-feature-1 {
+                    border: 1px solid #262626;
+                    border-radius: 8px;
+                    align-items: center;
+                    background-color: var.$propery-grey-15;
+                }
+            }
+
+            .cards {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 30px;
+                margin-bottom: 40px;
+                h1 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: white;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: var.$propery-grey-60;
+                a {
+                font-size: 16px;
+                font-weight: 500;
+                color: white;
+                }
+                }
+
+                .card {
+                    background-color: var.$propery-grey-10;
+                    width: 33%;
+                    margin: 0;
+                    padding: 30px;
+                    border: 1px solid #262626;
+                    border-radius: 12px;
+                    display: flex;
+                    align-items: start;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .foto {
+                        width: 100%;
+                        height: 100%;
+                        justify-content: center;
+                        display: flex;
+                    }
+
+                    .selection{
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 24px 0;
+                        gap: 6px;
+                        width: 100%;
+                        .button-select{
+                            display: flex;
+                            align-items: center;
+                            gap: 4px;
+                            padding: 6px 10px;
+                            border: 1px solid #262626;
+                            border-radius: 28px;
+                            background-color: var.$propery-grey-15;
+                        }
+                    }
+
+                    .buy{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 40px;
+                        .btnbuy{
+                            .btn-feature{
+                                background-color: var.$propery-purple-60;
+                                padding: 14px 20px;
+                                border-radius: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .next{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin:16px 0;
+
+                .btn-feature-3 {
+                    border: 1px solid #262626;
+                    border-radius: 8px;
+                    align-items: center;
+                    background-color: var.$propery-grey-15;
+                    display: none;
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: white;
+
+                    span{
+                        margin-left: 5px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: var.$propery-grey-60;
+                    }
+                }
+                .nextbtn{
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 10px;
+                    align-items: center;
+                    h5{
+                        display: none;
+                    }
+                    .btn-feature-2{
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 69px;
+                        border: 1px solid #262626;
+                        background-color: var.$propery-grey-10;
+                        padding: 3px 1px 2px 1px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+@use "../base/variables" as var;
+
+.home {
+    background-color: var.$propery-grey-08;
+    .home-content {
+        display: flex;
+        justify-content: space-between ;
+        align-items: center;
+        gap: 40px;
+        width: 90%;
+        background-color: var.$propery-grey-08;
+        margin-left:10%;
+
+
+
+        p {
+            font-size: 16px;
+            font-weight: 500;
+            color: var.$propery-grey-60;
+        }
+
+        &--left {
+            width: 50%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            color: white;
+
+
+            img {
+                position: absolute;
+                right: -110px;
+                z-index: 9;
+            }
+
+            h1 {
+                font-size: 46px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+
+            .btns {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 16px;
+                margin: 50px 0;
+
+
+                .btn-home-1 {
+                    border: 1px solid #262626;
+                    color: white;
+                    padding: 14px 20px;
+                    border-radius: 8px;
+                }
+
+                .btn-home-2 {
+                    background-color: var.$propery-purple-60;
+                    border: 1px solid #262626;
+                    color: white;
+                    padding: 14px 20px;
+                    border-radius: 8px;
+                }
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                gap: 16px;
+
+                .card {
+                    border: 1px solid "var.$propery-grey--15";
+                    border-radius: 10px;
+                    background-color: var.$propery-grey-10;
+                    padding: 14px 20px;
+                    width: 190px;
+
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 700;
+                        margin-bottom: 3px;
+                    }
+                }
+            }
+        }
+
+        &--right {
+            width: 50%;
+        }
+    }
+
+
+}
